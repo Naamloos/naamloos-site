@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Naamloos</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-        <script src="include/script.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naamloos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="include/script.js"></script>
+    <style>
+        yesscript {
+            display: none;
+        }
+    </style>
+</head>
 
-    <body>
+<body>
+    <yesscript>
         <section class="hero is-dark is-medium">
             <!-- Hero head: will stick at the top -->
             <div class="hero-head">
@@ -43,60 +49,238 @@
             </div>
         </section>
 
+
         <section class="section" id="aboutsection">
             <div class="container">
                 <h1 class="title">About me</h1>
-                <h2 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum et magna consequat, auctor ex non, lacinia mi.
-                        Phasellus interdum ante at sagittis vulputate.
-                        Pellentesque nec venenatis tellus, at lobortis nunc.
-                        Integer finibus quis nunc congue imperdiet.
-                        Cras nisi urna, pretium suscipit euismod in, pharetra mollis magna.
-                        Fusce luctus nunc ac nibh viverra hendrerit.
-                        Integer rutrum orci ornare, aliquet nibh congue, euismod ante.
-                        Sed tincidunt consectetur nisi a pellentesque. 
-                </h2>
+                <h2 class="subtitle">Who I am.</h2>
+                <p>
+                    I'm Ryan. I'm a 19 year old IT student at NHL Stenden.
+                    I have been programming for about 5 years now.
+                    I've decided to study IT because it has always been an interest of mine.
+                    My favourite programming language is C#. I speak Dutch, English and a little bit of German and
+                    French.
+                    <br>
+                </p>
+                <p>
+                    I go to college. I study IT and I want to specialize in software engineering / back-end programming.
+                    In my free time I like to make open source software, that is free to use for everyone.
+                    I have two GitHub accounts.
+                    The one listed here is my public account, where I host all my personal projects that I work on in my
+                    free time.
+                    The other account is for my school work. Most projects on there are on private repositories.
+                    My personal GitHub is @NaamloosDT and my school GitHub is @Naamloser.
+                    I also do a bit of video editing work for my own YouTube channel and a couple of others.
+                </p>
             </div>
         </section>
+
 
         <section class="section" id="projectssection">
             <div class="container">
                 <h1 class="title">Projects</h1>
-                <h2 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum et magna consequat, auctor ex non, lacinia mi.
-                        Phasellus interdum ante at sagittis vulputate.
-                        Pellentesque nec venenatis tellus, at lobortis nunc.
-                        Integer finibus quis nunc congue imperdiet.
-                        Cras nisi urna, pretium suscipit euismod in, pharetra mollis magna.
-                        Fusce luctus nunc ac nibh viverra hendrerit.
-                        Integer rutrum orci ornare, aliquet nibh congue, euismod ante.
-                        Sed tincidunt consectetur nisi a pellentesque. 
-                </h2>
+                <h2 class="subtitle">The stuff I made.</h2>
+
+                <!-- DSharpPlus -->
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="images/dsharpplus.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <a href="https://www.github.com/dsharpplus/dsharpplus" target="_blank">
+                                        <strong>DSharpPlus</strong> <small>DSharpPlus/DSharpPlus</small>
+                                    </a>
+                                    <br>
+                                    DSharpPlus is a .NET Library that is used to make bots for the free VOIP service
+                                    Discord.
+                                    It was initially based on DiscordSharp,
+                                    but we've since rewritten the whole thing to fit Discord's API standards better.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- foo_discord -->
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="images/foobar.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <a href="https://www.github.com/NaamloosDT/foo_discord" target="_blank">
+                                        <strong>foo_discord</strong> <small>NaamloosDT/foo_discord</small>
+                                    </a>
+                                    <br>
+                                    foo_discord is a plugin for the foobar2000 media player.
+                                    This plugin enables Discord rich presence functionality.
+                                    This means other users on Discord can see what you are listening to.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ModCore -->
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="images/modcore.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <a href="https://www.github.com/NaamloosDT/ModCore" target="_blank">
+                                        <strong>ModCore</strong> <small>NaamloosDT/ModCore</small>
+                                    </a>
+                                    <br>
+                                    ModCore is a Discord bot that helps a server owner moderate and manage their server.
+                                    The bot was initially meant to only serve my personal server but
+                                    it has grown to be a feature complete moderator bot that is free to use for anyone.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Rizumu -->
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="images/rizumu.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <a href="https://www.github.com/NaamloosDT/Rizumu" target="_blank">
+                                        <strong>Rizumu</strong> <small>NaamloosDT/Rizumu</small>
+                                    </a>
+                                    <br>
+                                    Rizumu is an open source rhythm game inspired by games like Osu!, Taiko no Tatsujin
+                                    and DDR.
+                                    Rizumu was written in C# on top of MonoGame.
+                                    It has been in development for 3 years by now.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
             </div>
         </section>
+
 
         <section class="section" id="socialsection">
             <div class="container">
                 <h1 class="title">Social</h1>
-                <h2 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum et magna consequat, auctor ex non, lacinia mi.
-                        Phasellus interdum ante at sagittis vulputate.
-                        Pellentesque nec venenatis tellus, at lobortis nunc.
-                        Integer finibus quis nunc congue imperdiet.
-                        Cras nisi urna, pretium suscipit euismod in, pharetra mollis magna.
-                        Fusce luctus nunc ac nibh viverra hendrerit.
-                        Integer rutrum orci ornare, aliquet nibh congue, euismod ante.
-                        Sed tincidunt consectetur nisi a pellentesque. 
-                </h2>
+                <h2 class="subtitle">Me shouting at strangers on the internet.</h2>
+            </div>
+
+            <div class="container" style="padding-top: 25px;">
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                        <div class="tile is-child box">
+                            <h1 class="title">add some social link</h1>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <a class="twitter-timeline" data-lang="en" data-dnt="true" data-theme="dark" height="800px"
+                                href="https://twitter.com/naamloser?ref_src=twsrc%5Etfw">
+                                Tweets by naamloser
+                            </a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <script>
-            setInitial();
-        </script>
-    </body>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script
+                        type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'V7V09Q1I'); kofiwidget2.draw();</script>
+                    <br>
+                    <br>
+                    <a href="https://bulma.io">
+                        <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma"
+                            width="128" height="24">
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </yesscript>
+
+    <noscript>
+        <section class="hero is-danger is-fullheight">
+            <!-- Hero head: will stick at the top -->
+            <div class="hero-head">
+
+            </div>
+
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        You dum dum!
+                    </h1>
+                    <h2 class="subtitle">
+                        You disabled Javascript.
+                    </h2>
+                    <a class="button is-link" href="https://www.enable-javascript.com/">Turn it on!</a>
+                    <p>
+                        Most websites use Javascript these days.
+                    </p>
+                    <p>
+                        Try to keep up with the times, grandpa!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+
+            </div>
+        </section>
+    </noscript>
+
+    <script>
+        setInitial();
+    </script>
+</body>
 
 </html>

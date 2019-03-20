@@ -6,9 +6,12 @@ function setInitial(){
     document.getElementById("aboutsection").style.display = defaultdisplay;
     document.getElementById("projectssection").style.display = 'none';
     document.getElementById("socialsection").style.display = 'none';
+
+    document.getElementsByTagName("yesscript")[0].style.display = 'block';
 }
 
 function pagebutton(item){
+    window.scrollTo(0, 0);
     document.getElementById("about").classList.remove("is-active");
     document.getElementById("projects").classList.remove("is-active");
     document.getElementById("social").classList.remove("is-active");
