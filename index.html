@@ -8,24 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="include/script.js"></script>
-    <style>
-        yesscript {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="include/style.css">
 </head>
 
 <body>
     <yesscript>
-        <section class="hero is-dark is-medium">
+        <section class="hero is-dark is-small">
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        Naamloos
+                        Naamloos.dev
                     </h1>
                     <h2 class="subtitle">
-                        About me
+                        or naamloos.me, I own both
                     </h2>
                 </div>
             </div>
@@ -35,7 +31,7 @@
                 <nav class="tabs is-boxed">
                     <div class="container">
                         <ul>
-                            <li class="is-active" id="about" onclick="pagebutton(this);"><a>About me</a></li>
+                            <li class="is-active" id="profile" onclick="pagebutton(this);"><a>Profile</a></li>
                             <li id="projects" onclick="pagebutton(this);"><a>Projects</a></li>
                             <li id="social" onclick="pagebutton(this);"><a>Social</a></li>
                         </ul>
@@ -44,37 +40,62 @@
             </div>
         </section>
 
-
-        <section class="section" id="aboutsection">
+        <section class="section" style="padding-bottom: 0">
             <div class="container">
-                <h1 class="title">About me</h1>
-                <h2 class="subtitle">Who I am.</h2>
-                <p>
-                    I'm Ryan. I'm a 19 year old IT student at NHL Stenden.
-                    I have been programming for about 5 years now.
-                    I've decided to study IT because it has always been an interest of mine.
-                    My favourite programming language is C#. I speak Dutch, English and a little bit of German and
-                    French.
-                    <br>
-                </p>
-                <p>
-                    I go to college. I study IT and I want to specialize in software engineering / back-end programming.
-                    In my free time I like to make open source software, that is free to use for everyone.
-                    I have two GitHub accounts.
-                    The one listed here is my public account, where I host all my personal projects that I work on in my
-                    free time.
-                    The other account is for my school work. Most projects on there are on private repositories.
-                    My personal GitHub is @NaamloosDT and my school GitHub is @Naamloser.
-                    I also do a bit of video editing work for my own YouTube channel and a couple of others.
-                </p>
+                <div class="notification is-info" style="min-height: 100px">
+                    <button class="delete" onclick="closeNotif(this);"></button>
+                    <p id="notification">
+                        test
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="profilesection">
+            <div class="container">
+                <h1 class="title has-text-centered">Profile</h1>
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <figure class="image" style="margin: auto">
+                            <img class="is-rounded" src="images/profile.png" style="max-height: 258px; max-width: 258px;">
+                        </figure>
+                    </div>
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="tile is-child">
+                            <h2 class="subtitle">Who I am.</h2>
+                            <p>
+                                I'm Ryan. I'm a 19 year old IT student at NHL Stenden.
+                                I have been programming for about 5 years now.
+                                I've decided to study IT because it has always been an interest of mine.
+                                My favourite programming language is C#. I speak Dutch, English and a little bit of German
+                                and
+                                French.
+                            </p>
+                        </div>
+                        <div class="tile is-child">
+                            <h2 class="subtitle">What I do.</h2>
+                            <p>
+                                I go to college. I study IT and I want to specialize in software engineering / back-end
+                                programming.
+                                In my free time I like to make open source software, that is free to use for everyone.
+                                I have two GitHub accounts.
+                                The one listed here is my public account, where I host all my personal projects that I work on in my free time.
+                                The other account is for my school work. Most projects on there are on private repositories.
+                                My personal GitHub is <a href="https://www.github.com/NaamloosDT/" target="_blank">@NaamloosDT</a> 
+                                and my professional GitHub is <a href="https://www.github.com/naamloser/" target="_blank">@Naamloser</a>.
+                                I also do a bit of video editing work for my own YouTube channel and a couple of others.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
 
         <section class="section" id="projectssection">
             <div class="container">
-                <h1 class="title">Projects</h1>
-                <h2 class="subtitle">The stuff I made.</h2>
+                <h1 class="title has-text-centered">Projects</h1>
+                <h2 class="subtitle has-text-centered">The stuff I made.</h2>
 
                 <!-- DSharpPlus -->
                 <div class="box">
@@ -164,8 +185,8 @@
                                         <strong>Rizumu</strong> <small>NaamloosDT/Rizumu</small>
                                     </a>
                                     <br>
-                                    Rizumu is an open source rhythm game inspired by games like Osu!, Taiko no Tatsujin
-                                    and DDR.
+                                    Rizumu is an open source rhythm game lightly inspired by games like Osu!, 
+                                    Taiko no Tatsujin and Dance Dance Revolution.
                                     Rizumu was written in C# on top of MonoGame.
                                     It has been in development for 3 years by now.
                                 </p>
@@ -180,8 +201,8 @@
 
         <section class="section" id="socialsection">
             <div class="container">
-                <h1 class="title">Social</h1>
-                <h2 class="subtitle">Me shouting at strangers on the internet.</h2>
+                <h1 class="title has-text-centered">Social</h1>
+                <h2 class="subtitle has-text-centered">Me shouting at strangers over the internet.</h2>
             </div>
 
             <div class="container" style="padding-top: 25px;">
@@ -189,74 +210,75 @@
                     <div class="tile is-4 is-vertical is-parent">
                         <div class="tile is-child box">
                             <p>
-                                <a href="https://twitter.com/naamloser">
+                                <a href="https://twitter.com/naamloser" target="_blank">
                                     <span class="icon"><i class="fab fa-twitter"></i></span>
                                     Twitter
                                 </a>
                             </p>
                             <p>
-                                <a href="https://www.youtube.com/naamloosdev">
+                                <a href="https://www.youtube.com/naamloosdev" target="_blank">
                                     <span class="icon"><i class="fab fa-youtube"></i></span>
                                     YouTube
                                 </a>
                             </p>
                             <p>
-                                <a href="https://www.instagram.com/naamloos_nl/">
+                                <a href="https://www.instagram.com/naamloos_nl/" target="_blank">
                                     <span class="icon"><i class="fab fa-instagram"></i></span>
                                     Instagram
                                 </a>
                             </p>
                             <p>
-                                <a href="https://www.last.fm/user/Naamloos_nl">
+                                <a href="https://www.last.fm/user/Naamloos_nl" target="_blank">
                                     <span class="icon"><i class="fab fa-lastfm"></i></span>
                                     Last FM
                                 </a>
                             </p>
                             <p>
-                                <a href="https://www.reddit.com/user/hierisryan">
+                                <a href="https://www.reddit.com/user/hierisryan" target="_blank">
                                     <span class="icon"><i class="fab fa-reddit"></i></span>
                                     Reddit
                                 </a>
                             </p>
                             <p>
-                                <a href="https://soundcloud.com/cyberdoge/">
+                                <a href="https://soundcloud.com/cyberdoge/" target="_blank">
                                     <span class="icon"><i class="fab fa-soundcloud"></i></span>
                                     Soundcloud
                                 </a>
                             </p>
                             <p>
-                                <a href="https://steamcommunity.com/id/naamloos_nl">
+                                <a href="https://steamcommunity.com/id/naamloos_nl" target="_blank">
                                     <span class="icon"><i class="fab fa-steam"></i></span>
                                     Steam
                                 </a>
                             </p>
                             <p>
-                                <a href="https://www.twitch.tv/naamloser">
+                                <a href="https://www.twitch.tv/naamloser" target="_blank">
                                     <span class="icon"><i class="fab fa-twitch"></i></span>
                                     Twitch
                                 </a>
                             </p>
                             <p>
-                                <a href="https://github.com/naamloosdt">
+                                <a href="https://github.com/naamloosdt" target="_blank">
                                     <span class="icon"><i class="fab fa-github"></i></span>
                                     GitHub - Personal
                                 </a>
                             </p>
                             <p>
-                                <a href="https://github.com/naamloser">
+                                <a href="https://github.com/naamloser" target="_blank">
                                     <span class="icon"><i class="fab fa-github"></i></span>
                                     GitHub - Professional
                                 </a>
                             </p>
                             <p>
-                                <a href="#" onclick="alert('SW-7285-4278-6405');">
+                                <a href="#"
+                                    onclick="showNotif('<big>Friend Code</big><p>My Nintendo Switch friend code is SW-7285-4278-6405.</p>');">
                                     <span class="icon"><i class="fab fa-nintendo-switch"></i></span>
                                     Nintendo Switch friend code
                                 </a>
                             </p>
                         </div>
                         <div class="tile is-child box">
-                            <img src="images/headphones.gif" alt="Kirby with headphones" width="100%"/>
+                            <img src="images/headphones.gif" alt="Kirby with headphones" width="100%" />
                         </div>
                     </div>
                     <div class="tile is-parent">
@@ -276,6 +298,7 @@
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
+                    <p>Donations? *shakes jar*</p>
                     <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
                     <script
                         type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'V7V09Q1I'); kofiwidget2.draw();</script>
